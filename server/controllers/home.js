@@ -10,14 +10,14 @@ function index(req, res) {
 
 function express(req, res) {
   res.render('home/express', {
-    hello: 'Hello from express world!'
+    hello: 'Hello from express world!---'
   });
 }
 
 function page(req, res) {
   res.render('home/page', {
     layout: 'static',
-    documentTitle: 'Static Page',
+    documentTitle: 'Static Page1',
     navTitle: 'Static Layout'
   });
 }
