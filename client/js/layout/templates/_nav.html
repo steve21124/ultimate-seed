@@ -20,6 +20,9 @@
         <li ng-class="{ active: $state.is('express') }">
           <a href="/express" target="_self">Express</a>
         </li>
+        <li ng-class="{ active: $state.is('posts') }">
+          <a href="/posts" target="_self">Posts</a>
+        </li>		
         <li ng-class="{ active: $state.includes('app.status') }">
           <a ng-href="{{ $state.href('app.status') }}">Status</a>
         </li>

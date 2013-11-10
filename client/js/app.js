@@ -22,6 +22,7 @@ var ngModule = angular.module('app', [
   'app.admin',
   'app.auth',
   'app.status',
+  'app.posts',
   'app.main'
 ]);
 

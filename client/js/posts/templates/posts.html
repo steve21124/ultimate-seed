@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="content">
+    <div class="page-header">
+      <div class="row">
+        <div class="col-md-9">
+          <h2>Posts</h2>
+        </div>
+        <div class="col-md-3 text-right">
+          <a class="btn btn-default" href="#" ng-click="fetch()">Update</a>
+        </div>
+      </div>
+    </div>
+    <div class="status">
+      <table class="table table-striped">
+        <thead>
+          <th>pid</th>
+          <th>rss</th>
+          <th>heapTotal</th>
+          <th>heapUsed</th>
+          <th>uptime</th>
+        </thead>
+        <tbody>
+          <tr ng-repeat="stat in status" class="animate-fade">
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

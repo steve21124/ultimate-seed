@@ -21,6 +21,7 @@ require('./layout');
 require('./main');
 require('./shared');
 require('./status');
+require('./posts');
 
 // Register app.
 require('./app');
