@@ -186,7 +186,8 @@ module.exports = function (grunt) {
     },
     jshint: {  // grunt-contrib-jshint
       options: {
-        jshintrc: '.jshintrc'
+        jshintrc: '.jshintrc',
+		force: true
       },
       client: [
         '<%= project.path.client %>/js/**/*.js',

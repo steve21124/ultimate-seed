@@ -10,7 +10,7 @@ exports = module.exports = function (ngModule) {
     $scope.fetch = function() {
       $http.get('/posts').then(function (res) {
 		//angularjs http.get automatically parse json
-	    $scope.posts  =  res.data.photos;
+	      $scope.posts = res.data.photos;
       });
     };
     $scope.fetch();
