@@ -49,6 +49,9 @@ exports.register = function (app, restify) {
   s.get('/status', c.status.index);
   s.get('/status/health', c.status.health);
 
+  // Posts
+  s.get('/posts', c.posts.index);
+	
   // Catch all
   s.get('*', app.lib.controller.catchAll);
 };

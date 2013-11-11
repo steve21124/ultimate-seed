@@ -13,7 +13,7 @@ var ngModule = angular.module('app.posts', []);
 ngModule.config(function ($stateProvider) {
   $stateProvider
     .state('app.posts', {
-      url: '/posts',
+      url: '/app-posts',
       views: {
         '@': {
           template: rhtml('./templates/posts.html'),

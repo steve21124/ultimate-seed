@@ -6,10 +6,11 @@
 
 exports = module.exports = function (ngModule) {
   ngModule.controller('PostsCtrl', function ($scope, $http) {
-    $scope.status = [];
+    $scope.posts = [];
     $scope.fetch = function() {
       $http.get('/posts').then(function (res) {
-        $scope.status.unshift(res.data);
+		//angularjs http.get automatically parse json
+	    $scope.posts  =  res.data.photos;
       });
     };
     $scope.fetch();

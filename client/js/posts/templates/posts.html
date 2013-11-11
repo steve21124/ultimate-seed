@@ -3,7 +3,7 @@
     <div class="page-header">
       <div class="row">
         <div class="col-md-9">
-          <h2>Posts</h2>
+          <h2>Posts ---</h2>
         </div>
         <div class="col-md-3 text-right">
           <a class="btn btn-default" href="#" ng-click="fetch()">Update</a>
@@ -20,8 +20,12 @@
           <th>uptime</th>
         </thead>
         <tbody>
-          <tr ng-repeat="stat in status" class="animate-fade">
-
+			{{posts.pages}},		
+			{{posts.photo.length}}
+          <tr ng-repeat="photo in posts.photo" class="animate-fade">
+			  <td>
+			 	{{photo.title}}
+			</td>
           </tr>
         </tbody>
       </table>
